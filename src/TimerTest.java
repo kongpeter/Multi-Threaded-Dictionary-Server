@@ -13,6 +13,7 @@ public class TimerTest
     public static void main(String[] args)
     {
         Timer timer = new Timer();// 实例化Timer类
+
         timer.schedule(new TimerTask()
         {
             public void run()
@@ -21,6 +22,7 @@ public class TimerTest
                 this.cancel();
             }
         }, 5000);// 这里百毫秒
-        System.out.println("本程序存在5秒后自动退出");
+
+        System.out.println("This program will quit in 5 seconds");
     }
 }
